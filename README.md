@@ -51,24 +51,31 @@ docker-compose exec web python manage.py collectstatic --no-input
 ### Шаблон наполнения env-файла:
 
 - указывается, что работаем с postgresql:
+
 DB_ENGINE=django.db.backends.postgresql
 
 - задается имя базы данных:
+
 DB_NAME=postgres
 
 - задается логин для подключения к базе данных:
+
 POSTGRES_USER=login(установите свой)
 
 - задается пароль для подключения к БД
+
 POSTGRES_PASSWORD=password(установите свой)
 
 - задается название сервиса (контейнера)
+
 DB_HOST=db
 
 - задается порт для подключения к БД
+
 DB_PORT=5432
 
 - задается Secret Key Django
+
 SECRET_KEY=secret_key(установите свой)
 
 
